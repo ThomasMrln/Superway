@@ -1,0 +1,1 @@
+<?= "Hello, you are on the ./templates/home.php page.";

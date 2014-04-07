@@ -1,0 +1,1 @@
+<?= "Hello you'r in the ./templates/404.php page";
