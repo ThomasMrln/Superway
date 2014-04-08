@@ -12,13 +12,13 @@ class Superway {
 	public function __construct($root) {
 			$this->root	=	$root;
 					
-			$this->uri		=	$_SERVER['REQUEST_URI'];
+			$this->uri	=	$_SERVER['REQUEST_URI'];
 			
 			if ($_SERVER['argc'] > 0)
 					$this->values	=	$_SERVER['argv'];
 	}
 	
-	public function __get($key)			{	return $this->$key;			}
+	public function __get($key) 		{	return $this->$key;			}
 	public function __set($key, $value)	{	$this->$key	=	$value;		}
 	
 	public function drive( $path=null) {
