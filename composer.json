@@ -1,0 +1,24 @@
+{
+    "name": "thomasmrln/Superway",
+    "description": "New generation Php route : simply and fast !",
+    "keywords": ["php", "route", "router", "url", "rewriting"],
+    "homepage": "https://github.com/ThomasMrln/Superway",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Thomas Merlen",
+            "email": "thomas@merlen.fr",
+            "homepage": "http://www.thomasmerlen.fr/"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "target-dir": "/",
+    "autoload": {
+        "psr-0": { 
+            "Superway": "src/"
+        }
+    }
+}
