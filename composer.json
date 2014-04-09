@@ -1,7 +1,7 @@
 {
     "name": "thomasmrln/superway",
     "description": "New generation Php route : simply and fast !",
-    "keywords": ["php", "route", "router", "url", "rewriting"],
+    "keywords": ["php", "route", "router", "url", "rewriting", "superway", "way", "road"],
     "homepage": "https://github.com/ThomasMrln/Superway",
     "license": "MIT",
     "minimum-stability": "dev",
