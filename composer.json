@@ -17,8 +17,9 @@
     },
     "target-dir": "/",
     "autoload": {
-        "psr-0": { 
-            "Superway": "src/"
+        "psr-4": { 
+            "Superway": "src/Superway",
+            "Road": "src/Road
         }
     }
 }
