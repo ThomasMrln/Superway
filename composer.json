@@ -19,7 +19,7 @@
     "autoload": {
         "psr-4": { 
             "Superway": "src/Superway",
-            "Road": "src/Road
+            "Road": "src/Road"
         }
     }
 }
