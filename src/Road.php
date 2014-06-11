@@ -23,7 +23,7 @@ class Road {
 			$this->pattern 	=	$this->separators[0];
 			unset($this->separators[0]);
 			for ($i=0; $i < count($this->argv); $i++)
-					$this->pattern	.=	$this->separators[$i].$this->argv[$i];
+					$this->pattern	.=	((isset($this->separators[$i]))?$this->separators[$i]:'').((isset($this->argv[$i]))?$this->argv[$i]:'');
 			
 			if ($this->pattern[strlen($this->pattern)-1] == '/')
 					$this->pattern	=	substr($this->pattern, 0, strlen($this->pattern)-1 );			
@@ -33,8 +33,7 @@ class Road {
 	public function __set($key, $value)	{	$this->$key	=	$value;	}
 	
 	public function match( $path ) {
-			$pattern	=	str_replace('/', '\/', '#'.preg_replace('/\{([a-zA-Z0-9]{1,})\}/', '(.*)', $this->pattern).'/?#');
-
+			$pattern	=	str_replace('/', '\/', '#'.preg_replace('/\{([a-zA-Z0-9]{1,})\}/', '([^\/]{1,})', $this->pattern).'/?#');
 			if (preg_match($pattern, $path, $matches)) {
 					if ($matches[0] == $path) {
 							$variables	=	array();
